@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: "Raleway", sans-serif;
+    margin: 0; /* Pour éviter la marge au dessus */
 }
 
 :root {
@@ -16,12 +17,29 @@
 body {
     display: flex;
     justify-content: center;
+    /* border: solid 5px goldenrod; */
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/*
+main > div {
+    Sélecteur avancé trop stylé ;-) 
+    border: #0065fc solid 2px; 
+}*/
+
 .main-container {
+    display: flex; /* obliger pour utiliser gap*/
+    flex-direction: column;
     width: 100%;
+    min-width: 320px;
     max-width: 1440px;
     padding: 0 50px;
+    gap: 30px; /* Pour l'écartement entre header, main, footer*/
     box-sizing: border-box;
 }
 
@@ -33,6 +51,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    border: cyan solid 2px;
 }
 
 .card {
@@ -40,6 +59,7 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+    border: pink solid 2px;
 }
 
 .card img {
@@ -48,6 +68,7 @@ a {
 
 .card-title {
     font-size: 16px;
+    border: yellowgreen solid 2px;
 }
 
 .euro {
@@ -58,11 +79,28 @@ a {
     color: var(--main-bg-color);
 }
 
+/****** Header ***********/
+header {
+    width: 100%;
+    height: 79px;
+    box-sizing: border-box;
+    /* border: solid 3px blue; */
+}
+
+/****** Recherche et Filtre ***********/
+.search-and-filter {
+    width: 100%;
+    height: 79px;
+    box-sizing: border-box;
+    /* border: solid 3px green; */
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    border: solid 4px purple;
+    /* margin: 50px 0; */
+    /* border: solid 4px purple; */
 }
 
 .hebergements-and-populaires section {
@@ -70,7 +108,7 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    border: solid 4px red;
+    /* border: solid 4px red; */
 }
 
 /****** Hebergements ***********/
@@ -123,8 +161,21 @@ a {
     margin-bottom: 5px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Activités ***********/
+.activities {
+    width: 100%;
+    height: 79px;
+    box-sizing: border-box;
+    /* border: solid 3px pink; */
+}
 
+/****** Footer ***********/
+footer {
+    width: 100%;
+    height: 79px;
+    box-sizing: border-box;
+    /* border: solid 3px cyan; */
+}
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
