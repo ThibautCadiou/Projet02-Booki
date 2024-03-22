@@ -223,6 +223,7 @@ nav p:hover {
 .search-and-filter-title-font {
     font-size: 18px;
     font-weight: bold;
+    border: 2px solid magenta;
 }
 
 .onglets {
@@ -285,10 +286,11 @@ nav p:hover {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     /* border: solid 4px purple; */
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires > section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -299,6 +301,66 @@ nav p:hover {
 /****** Hebergements ******/
 .hebergements {
     width: 65%;
+}
+
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: solid 2px black; */
+}
+
+.hebergements-cards a {
+    display: flex;
+    box-sizing: border-box;
+    width: calc(33% - 30px);
+    height: calc(50% - 15px);
+    row-gap: 30px;
+    /* border: solid 2px pink; */
+}
+
+.hebergement-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* height: fit-content; */
+    width: 100%;
+    padding: 4px;
+    gap: 4px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    /* border: dotted 2px purple; */
+}
+
+.hebergement-card img {
+    display: flex;
+    object-fit: cover;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    /* border: solid 2px green; */
+}
+
+.hebergements-cards-text-content {
+    display: flex;
+    flex-direction: column;
+    /* height: 67.25px; */
+    gap: 8px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* border: solid 2px blue; */
 }
 
 /****** Populaires ******/
@@ -338,8 +400,11 @@ nav p:hover {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+/* .populaires-cards .card-subtitle { */
+.card-subtitle {
     margin: 0;
+    font-size: 14px;
+    border: solid pink 1px;
 }
 
 .populaires-cards .card-rating {
