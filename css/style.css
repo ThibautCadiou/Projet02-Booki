@@ -283,18 +283,38 @@ nav p:hover {
 .infobar {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: fit-content;
     gap: 10px;
+    box-sizing: border-box;
     /* border: solid 3px black; */
 }
 
+/* .carre {
+    display: flex;
+
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    border: solid 3px red;
+} */
+
 .infobar i {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 24px;
     height: 24px;
-    border: var(--filter-bg-color) solid 2px;
-    border-radius: 24px;
+    min-width: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: var(--filter-bg-color) solid 1px;
+}
+
+.infobar p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: solid 3px red; */
 }
 
 /****** Hebergements And Populaires ******/
@@ -614,17 +634,12 @@ footer div {
         border: none;
         border-radius: 15px;
         /* border: solid 2px blue; */
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
     .submit02 i {
         color: white;
         transform: scale(1.121);
-    }
-
-    .search-button {
-        border-radius: 15px;
-        width: 49px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
     .search-form {
@@ -636,5 +651,17 @@ footer div {
         width: calc(100% - 25px);
         border-top: solid 2px var(--main-bg-color);
         border-bottom: solid 2px var(--main-bg-color);
+    }
+
+    .onglets {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .filter-onglet {
+        width: calc(50% - 10px);
+        justify-content: left;
+        font-size: 14px;
     }
 }
