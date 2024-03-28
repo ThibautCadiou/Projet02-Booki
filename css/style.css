@@ -26,12 +26,6 @@ main {
     gap: 35px;
 }
 
-/*
-main > div {
-    Sélecteur avancé trop stylé ;-)
-    border: #0065fc solid 2px;
-}*/
-
 .main-container {
     display: flex; /* obliger pour utiliser gap*/
     flex-direction: column;
@@ -40,6 +34,7 @@ main > div {
     max-width: 1440px;
     gap: 30px; /* Pour l'écartement entre header, main, footer*/
     box-sizing: border-box;
+    /* border: cyan solid 20px; */
 }
 
 main {
@@ -503,6 +498,7 @@ footer {
 footer div {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     width: 100%;
     padding: 20px;
     gap: 15px;
