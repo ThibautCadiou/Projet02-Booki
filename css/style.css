@@ -274,6 +274,10 @@ nav p:hover {
     transform: scaleX(1.286) scaleY(1.255);
 }
 
+.titre-onglet-text {
+    font-weight: bold;
+}
+
 /****** Infobar ******/
 .infobar {
     display: flex;
